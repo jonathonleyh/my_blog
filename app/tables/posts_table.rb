@@ -12,7 +12,7 @@ class PostsTable < TableCloth::Base
 
   actions separator: " | " do
     action {|post| link_to "Edit", edit_post_path(post) }
-    action {|post| link_to "Delete", post_path(post), method: :delete }
+    action {|post| link_to "Delete", post_path(post), method: :delete, confirm: "Are you sure you want to delete this goal?" }
   end
 
   config.table.class = 'table table-bordered'
