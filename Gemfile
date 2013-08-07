@@ -20,7 +20,6 @@ gem 'pg'
 
 group :production do
   gem 'rails_12factor'
-  gem 'table_cloth'
 end
 
 
